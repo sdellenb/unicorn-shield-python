@@ -1,4 +1,4 @@
-from neopixel import Adafruit_NeoPixel
+from rpi_ws281x import PixelStrip
 import gpiozero
 import time
 import RPi.GPIO as gpio
@@ -20,7 +20,7 @@ LED_BRIGHTNESS = 128     # Set to 0 for darkest and 255 for brightest
 LED_CHANNEL    = 0       # PWM channel
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 
-ws2812 = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
+ws2812 = PixelStrip(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
 ws2812.begin()
 
 # LEDs
