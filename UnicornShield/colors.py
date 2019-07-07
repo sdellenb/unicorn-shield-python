@@ -33,7 +33,7 @@ def turnoff():
 while True:
     if unicorn.buttonPressed():
         if color_index != next_color_index:
-            print "Cycling color!"
+            print("Cycling color!")
             unicorn.setAll(
                 colors[color_index][0],
                 colors[color_index][1],

@@ -2,7 +2,7 @@ import unicornshield as unicorn
 import time
 
 while True:
-    print unicorn.nose()
+    print(unicorn.nose())
     if unicorn.nose() < 0.25:
         unicorn.leftEyeOn()
         unicorn.rightEyeOn()
